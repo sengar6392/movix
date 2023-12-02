@@ -1,0 +1,29 @@
+.backdrop-img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    .lazy-load-image-background{
+        height: 100%;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+.search-input{
+    padding: 1rem 1rem;
+    width: 80%;
+    height: 100%;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
