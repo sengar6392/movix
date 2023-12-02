@@ -88,7 +88,7 @@ const HeroSection = () => {
           <input
             onChange={(e) => setQuery(e.target.value)}
             onKeyUp={searchQueryHandler}
-            placeholder="Search.."
+            placeholder="Search for a movie or tv show..."
             className="search-input"
           />
           <Button

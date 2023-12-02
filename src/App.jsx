@@ -3,6 +3,7 @@ import { fetchDataFromApi } from "./utils/api";
 import { Outlet } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getApiConfiguration } from "./store/homeSlice";
+import Header from "./components/heroSection/header/Header";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
   };
   return (
     <>
+      <Header/>
       <Outlet />
     </>
   );
